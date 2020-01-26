@@ -6,7 +6,7 @@ auth.set_access_token('access token #1','access token #2')
 
 api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
-'''user = api.me()
+user = api.me()
 
 for follower in tweepy.Cursor(api.followers).items():
     print(follower.name)
@@ -23,7 +23,7 @@ for tweet in tweepy.Cursor(api.search, search).items(nrTweets):
         print(e.reason)
     except StopIteration:
         break
-'''
+
 search = 'Warne'
 nrTweets = 10
 
